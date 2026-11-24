@@ -14,7 +14,6 @@ npm install
 ```
 
 ```bash
-cd "C:\Users\Miguel\OneDrive\Desktop\queBichoehEsse"
 npm start
 ```
 
