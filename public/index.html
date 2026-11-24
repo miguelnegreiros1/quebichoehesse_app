@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Que bicho é esse? | Identificação de Animais</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700;800&family=Lilita+One&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Logotipo Superior estilo Geodle -->
+    <header class="app-hero-header">
+      <div class="brand-logo-wrapper">
+        <h1 class="brand-logo">Que bicho é esse?</h1>
+      </div>
+      <p class="brand-tagline">Descubra a espécie do animal a partir de suas características físicas e localização.</p>
+    </header>
+
+    <!-- Card Principal de Perguntas (#F5F5F5) -->
+    <main class="quiz-card">
+      <header class="quiz-header">
+        <div class="title-row">
+          <h2 class="quiz-section-title">🔎 Identificação de Espécies</h2>
+          <button id="btnReset" class="btn-reset" title="Reiniciar perguntas">Reiniciar ↺</button>
+        </div>
+      </header>
+
+      <!-- Lista dinâmica de perguntas em cascata -->
+      <section id="questionsContainer" class="questions-flow" aria-live="polite">
+        <!-- As perguntas serão injetadas aqui sequencialmente via app.js -->
+      </section>
+
+      <!-- Contador / Botão de Resultados estilo pill -->
+      <footer class="results-trigger-bar">
+        <button id="btnViewResults" class="btn-results-link">
+          <span class="pulse-indicator"></span>
+          <span id="resultsCountText">Resultados: calculando espécies possíveis...</span>
+          <span class="arrow-icon">→</span>
+        </button>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Painel Lateral Oculto / Drawer (Fundo #F5F5F5 um pouco opaco com Blur) -->
+  <aside id="resultsDrawer" class="drawer" aria-hidden="true">
+    <div id="drawerOverlay" class="drawer-overlay"></div>
+    <div class="drawer-panel">
+      <header class="drawer-header">
+        <div class="drawer-title-group">
+          <h2>🐾 Espécies Possíveis</h2>
+          <span id="drawerCountBadge" class="count-badge">0</span>
+        </div>
+        <button id="btnCloseDrawer" class="btn-close" aria-label="Fechar painel">✕</button>
+      </header>
+
+      <!-- Resumo dos filtros aplicados em tons terrosos -->
+      <div id="activeFiltersBar" class="active-filters">
+        <!-- Tags com os filtros atuais -->
+      </div>
+
+      <!-- Galeria de Cards -->
+      <div id="speciesGallery" class="species-grid">
+        <!-- Cards gerados dinamicamente -->
+      </div>
+
+      <!-- Estado Vazio -->
+      <div id="emptyState" class="empty-state hidden">
+        <div class="empty-icon">🦉</div>
+        <h3>Nenhuma espécie encontrada com esses critérios exatos</h3>
+        <p>Tente selecionar "Não sei" ou "Outra" em alguma cor para expandir a busca.</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Modal de Detalhes Completos do Animal -->
+  <div id="animalModal" class="modal hidden" aria-hidden="true">
+    <div id="modalOverlay" class="modal-overlay"></div>
+    <div class="modal-card">
+      <button id="btnCloseModal" class="btn-modal-close" aria-label="Fechar detalhes">✕</button>
+      
+      <div class="modal-media">
+        <img id="modalAnimalImg" src="" alt="Foto do animal" loading="lazy">
+        <div class="modal-badge-row">
+          <span id="modalTaxonClass" class="badge badge-green">Classe</span>
+          <span id="modalDiet" class="badge badge-earthy">Dieta</span>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <h2 id="modalCommonName" class="modal-title">Nome Comum</h2>
+        <p id="modalScientificName" class="modal-scientific">Nome científico</p>
+
+        <div class="modal-info-grid">
+          <div class="info-block">
+            <span class="info-label">🌍 Países / Regiões</span>
+            <span id="modalCountries" class="info-value">Brasil</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label">🌿 Habitat Natural</span>
+            <span id="modalHabitat" class="info-value">Florestas tropicais</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label">📏 Tamanho / Porte</span>
+            <span id="modalSize" class="info-value">Médio</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label">🎨 Cores</span>
+            <span id="modalColors" class="info-value">Verde, Amarelo</span>
+          </div>
+        </div>
+
+        <div class="modal-desc-section">
+          <h3>Sobre a espécie</h3>
+          <p id="modalDescription" class="modal-desc">Descrição detalhada do animal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

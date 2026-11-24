@@ -1,0 +1,630 @@
+[
+  {
+    "slug": "blue-macaw",
+    "name": "Hyacinth Macaw",
+    "commonNamePt": "Arara-azul-grande",
+    "scientificName": "Anodorhynchus hyacinthinus",
+    "taxonomy": {
+      "class": "Aves",
+      "order": "Psittaciformes",
+      "family": "Psittacidae"
+    },
+    "colors": ["blue", "yellow"],
+    "colorsPt": ["azul", "amarelo"],
+    "measurements": {
+      "lengthCm": 100,
+      "weightKg": 1.5,
+      "sizeCategory": "grande"
+    },
+    "countries": ["Brazil", "Bolivia", "Paraguay"],
+    "countriesPt": ["Brasil", "Bolívia", "Paraguai"],
+    "habitat": "Pantanal, florestas tropicais e cerrados",
+    "diet": "Herbivore",
+    "image": "https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80",
+    "summary": "A arara-azul-grande é a maior espécie de arara do mundo, famosa por sua plumagem azul cobalto vibrante e anel amarelo ao redor dos olhos e bico."
+  },
+  {
+    "slug": "toco-toucan",
+    "name": "Toco Toucan",
+    "commonNamePt": "Tucano-toco",
+    "scientificName": "Ramphastos toco",
+    "taxonomy": {
+      "class": "Aves",
+      "order": "Piciformes",
+      "family": "Ramphastidae"
+    },
+    "colors": ["black", "white", "orange", "yellow"],
+    "colorsPt": ["preto", "branco", "laranja", "amarelo"],
+    "measurements": {
+      "lengthCm": 60,
+      "weightKg": 0.7,
+      "sizeCategory": "grande"
+    },
+    "countries": ["Brazil", "Argentina", "Paraguay", "Bolivia"],
+    "countriesPt": ["Brasil", "Argentina", "Paraguai", "Bolívia"],
+    "habitat": "Cerrado, bordas de florestas e matas ciliares",
+    "diet": "Omnivore",
+    "image": "https://images.unsplash.com/photo-1549608276-5786777e6587?auto=format&fit=crop&w=800&q=80",
+    "summary": "O tucano-toco é facilmente reconhecível pelo enorme bico amarelo-alaranjado com ponta preta e corpo predominantemente preto com papo branco."
+  },
+  {
+    "slug": "great-kiskadee",
+    "name": "Great Kiskadee",
+    "commonNamePt": "Bem-te-vi",
+    "scientificName": "Pitangus sulphuratus",
+    "taxonomy": {
+      "class": "Aves",
+      "order": "Passeriformes",
+      "family": "Tyrannidae"
+    },
+    "colors": ["yellow", "brown", "white", "black"],
+    "colorsPt": ["amarelo", "marrom", "branco", "preto"],
+    "measurements": {
+      "lengthCm": 23,
+      "weightKg": 0.065,
+      "sizeCategory": "pequeno"
+    },
+    "countries": ["Brazil", "Argentina", "Mexico", "United States", "Colombia"],
+    "countriesPt": ["Brasil", "Argentina", "México", "Estados Unidos", "Colômbia"],
+    "habitat": "Zonas urbanas, bordas de rios e campos abertos",
+    "diet": "Omnivore",
+    "image": "https://images.unsplash.com/photo-1618331835717-801e976710b2?auto=format&fit=crop&w=800&q=80",
+    "summary": "Pássaro muito popular e adaptável, com peito amarelo vivo, dorso marrom e listra branca na cabeça, conhecido pelo seu canto onomatopeico característico."
+  },
+  {
+    "slug": "swallow-tailed-hummingbird",
+    "name": "Swallow-tailed Hummingbird",
+    "commonNamePt": "Beija-flor-tesoura",
+    "scientificName": "Eupetomena macroura",
+    "taxonomy": {
+      "class": "Aves",
+      "order": "Apodiformes",
+      "family": "Trochilidae"
+    },
+    "colors": ["blue", "green"],
+    "colorsPt": ["azul", "verde"],
+    "measurements": {
+      "lengthCm": 16,
+      "weightKg": 0.009,
+      "sizeCategory": "muito-pequeno"
+    },
+    "countries": ["Brazil", "Bolivia", "Paraguay"],
+    "countriesPt": ["Brasil", "Bolívia", "Paraguai"],
+    "habitat": "Jardins urbanos, cerrados e capoeiras",
+    "diet": "Herbivore",
+    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80",
+    "summary": "Um dos maiores beija-flores do Brasil, com cabeça e peito azul-violeta brilhante, corpo esverdeado e cauda bifurcada semelhante a uma tesoura."
+  },
+  {
+    "slug": "harpy-eagle",
+    "name": "Harpy Eagle",
+    "commonNamePt": "Gavião-real (Harpia)",
+    "scientificName": "Harpia harpyja",
+    "taxonomy": {
+      "class": "Aves",
+      "order": "Accipitriformes",
+      "family": "Accipitridae"
+    },
+    "colors": ["grey", "black", "white"],
+    "colorsPt": ["cinza", "preto", "branco"],
+    "measurements": {
+      "lengthCm": 100,
+      "weightKg": 8.0,
+      "sizeCategory": "muito-grande"
+    },
+    "countries": ["Brazil", "Panama", "Colombia", "Venezuela", "Peru"],
+    "countriesPt": ["Brasil", "Panamá", "Colômbia", "Venezuela", "Peru"],
+    "habitat": "Florestas tropicais densas e dossel florestal",
+    "diet": "Carnivore",
+    "image": "https://images.unsplash.com/photo-1611689342806-0863700ce1e4?auto=format&fit=crop&w=800&q=80",
+    "summary": "Uma das maiores e mais poderosas aves de rapina do planeta, com garras maiores que as de um urso pardo, caçando primatas e preguiças no topo das florestas."
+  },
+  {
+    "slug": "house-sparrow",
+    "name": "House Sparrow",
+    "commonNamePt": "Pardal",
+    "scientificName": "Passer domesticus",
+    "taxonomy": {
+      "class": "Aves",
+      "order": "Passeriformes",
+      "family": "Passeridae"
+    },
+    "colors": ["brown", "grey", "black", "white"],
+    "colorsPt": ["marrom", "cinza", "preto", "branco"],
+    "measurements": {
+      "lengthCm": 15,
+      "weightKg": 0.03,
+      "sizeCategory": "pequeno"
+    },
+    "countries": ["Brazil", "United States", "Portugal", "Spain", "France"],
+    "countriesPt": ["Brasil", "Estados Unidos", "Portugal", "Espanha", "França"],
+    "habitat": "Cidades, áreas agrícolas e construções humanas",
+    "diet": "Omnivore",
+    "image": "https://images.unsplash.com/photo-1522926197415-e56add98471b?auto=format&fit=crop&w=800&q=80",
+    "summary": "Ave cosmopolita de porte pequeno, muito comum em praças e telhados urbanos, com plumagem em tons de marrom e cinza."
+  },
+  {
+    "slug": "rock-dove",
+    "name": "Rock Dove",
+    "commonNamePt": "Pombo-doméstico",
+    "scientificName": "Columba livia",
+    "taxonomy": {
+      "class": "Aves",
+      "order": "Columbiformes",
+      "family": "Columbidae"
+    },
+    "colors": ["grey", "white", "black"],
+    "colorsPt": ["cinza", "branco", "preto"],
+    "measurements": {
+      "lengthCm": 33,
+      "weightKg": 0.35,
+      "sizeCategory": "medio"
+    },
+    "countries": ["Brazil", "United States", "Portugal", "Spain", "Italy"],
+    "countriesPt": ["Brasil", "Estados Unidos", "Portugal", "Espanha", "Itália"],
+    "habitat": "Cidades, praças, edifícios e penhascos",
+    "diet": "Herbivore",
+    "image": "https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=800&q=80",
+    "summary": "Ave de porte médio abundante em centros urbanos, com penas predominantemente cinzentas e reflexos furta-cor no pescoço."
+  },
+  {
+    "slug": "jaguar",
+    "name": "Jaguar",
+    "commonNamePt": "Onça-pintada",
+    "scientificName": "Panthera onca",
+    "taxonomy": {
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Felidae"
+    },
+    "hasFur": true,
+    "colors": ["yellow", "black", "brown"],
+    "colorsPt": ["amarelo", "preto", "marrom"],
+    "measurements": {
+      "lengthCm": 170,
+      "weightKg": 95,
+      "sizeCategory": "grande"
+    },
+    "countries": ["Brazil", "Paraguay", "Bolivia", "Colombia", "Mexico"],
+    "countriesPt": ["Brasil", "Paraguai", "Bolívia", "Colômbia", "México"],
+    "habitat": "Florestas tropicais, pantanal e matas ciliares",
+    "diet": "Carnivore",
+    "image": "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?auto=format&fit=crop&w=800&q=80",
+    "summary": "O maior felino das Américas, dotado de pelagem amarela com rosetas negras únicas em cada indivíduo e a mordida proporcionalmente mais forte entre todos os grandes felinos."
+  },
+  {
+    "slug": "capybara",
+    "name": "Capybara",
+    "commonNamePt": "Capivara",
+    "scientificName": "Hydrochoerus hydrochaeris",
+    "taxonomy": {
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Caviidae"
+    },
+    "hasFur": true,
+    "colors": ["brown", "grey"],
+    "colorsPt": ["marrom", "cinza"],
+    "measurements": {
+      "lengthCm": 120,
+      "weightKg": 50,
+      "sizeCategory": "medio"
+    },
+    "countries": ["Brazil", "Argentina", "Colombia", "Uruguay", "Venezuela"],
+    "countriesPt": ["Brasil", "Argentina", "Colômbia", "Uruguai", "Venezuela"],
+    "habitat": "Margens de rios, lagos, pântanos e áreas gramadas",
+    "diet": "Herbivore",
+    "image": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=800&q=80",
+    "summary": "O maior roedor vivo do mundo, semi-aquático, calmo e social, com pelagem grossa marrom e excelente capacidade de natação."
+  },
+  {
+    "slug": "maned-wolf",
+    "name": "Maned Wolf",
+    "commonNamePt": "Lobo-guará",
+    "scientificName": "Chrysocyon brachyurus",
+    "taxonomy": {
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Canidae"
+    },
+    "hasFur": true,
+    "colors": ["red", "black", "white"],
+    "colorsPt": ["avermelhado", "preto", "branco"],
+    "measurements": {
+      "lengthCm": 130,
+      "weightKg": 25,
+      "sizeCategory": "medio"
+    },
+    "countries": ["Brazil", "Paraguay", "Bolivia", "Argentina"],
+    "countriesPt": ["Brasil", "Paraguai", "Bolívia", "Argentina"],
+    "habitat": "Campos abertos e savanas do Cerrado",
+    "diet": "Omnivore",
+    "image": "https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&w=800&q=80",
+    "summary": "Maior canídeo da América do Sul, com pernas longas e esguias, pelagem avermelhada e uma juba escura dorsal, alimentando-se muito da lobeira e pequenos animais."
+  },
+  {
+    "slug": "golden-lion-tamarin",
+    "name": "Golden Lion Tamarin",
+    "commonNamePt": "Mico-leão-dourado",
+    "scientificName": "Leontopithecus rosalia",
+    "taxonomy": {
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Callitrichidae"
+    },
+    "hasFur": true,
+    "colors": ["yellow", "red"],
+    "colorsPt": ["amarelo", "avermelhado"],
+    "measurements": {
+      "lengthCm": 30,
+      "weightKg": 0.6,
+      "sizeCategory": "pequeno"
+    },
+    "countries": ["Brazil"],
+    "countriesPt": ["Brasil"],
+    "habitat": "Mata Atlântica no estado do Rio de Janeiro",
+    "diet": "Omnivore",
+    "image": "https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=800&q=80",
+    "summary": "Primata endêmico do Brasil famoso por sua pelagem sedosa dourada-alaranjada e exuberante juba em volta da face escura."
+  },
+  {
+    "slug": "blue-whale",
+    "name": "Blue Whale",
+    "commonNamePt": "Baleia-azul",
+    "scientificName": "Balaenoptera musculus",
+    "taxonomy": {
+      "class": "Mammalia",
+      "order": "Cetacea",
+      "family": "Balaenopteridae"
+    },
+    "hasFur": false,
+    "colors": ["blue", "grey", "white"],
+    "colorsPt": ["cinza", "branco"],
+    "measurements": {
+      "lengthCm": 3000,
+      "weightKg": 150000,
+      "sizeCategory": "gigante"
+    },
+    "countries": ["Brazil", "United States", "Australia", "Chile", "South Africa"],
+    "countriesPt": ["Brasil", "Estados Unidos", "Austrália", "Chile", "África do Sul"],
+    "habitat": "Oceanos abertos ao redor do mundo",
+    "diet": "Carnivore",
+    "image": "https://images.unsplash.com/photo-1568430462989-44163eb1752f?auto=format&fit=crop&w=800&q=80",
+    "summary": "O maior animal que já existiu no planeta Terra. Mamífero marinho gigante sem pelos visíveis, alimentando-se de toneladas de krill por dia."
+  },
+  {
+    "slug": "nine-banded-armadillo",
+    "name": "Nine-banded Armadillo",
+    "commonNamePt": "Tatu-galinha",
+    "scientificName": "Dasypus novemcinctus",
+    "taxonomy": {
+      "class": "Mammalia",
+      "order": "Cingulata",
+      "family": "Dasypodidae"
+    },
+    "hasFur": false,
+    "colors": ["grey", "brown"],
+    "colorsPt": ["cinza", "marrom"],
+    "measurements": {
+      "lengthCm": 45,
+      "weightKg": 4.5,
+      "sizeCategory": "pequeno"
+    },
+    "countries": ["Brazil", "United States", "Mexico", "Argentina"],
+    "countriesPt": ["Brasil", "Estados Unidos", "México", "Argentina"],
+    "habitat": "Matas, cerrados e pastagens",
+    "diet": "Insectivore",
+    "image": "https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?auto=format&fit=crop&w=800&q=80",
+    "summary": "Mamífero couraçado com carapaça articulada por 9 cintas móveis, com poucos pelos esparsos no ventre e focinho afilado para escavação."
+  },
+  {
+    "slug": "green-anaconda",
+    "name": "Green Anaconda",
+    "commonNamePt": "Sucuri-verde",
+    "scientificName": "Eunectes murinus",
+    "taxonomy": {
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Boidae"
+    },
+    "bodyType": "cobra",
+    "colors": ["green", "brown", "black", "yellow"],
+    "colorsPt": ["verde", "marrom", "preto", "amarelo"],
+    "measurements": {
+      "lengthCm": 600,
+      "weightKg": 100,
+      "sizeCategory": "grande"
+    },
+    "countries": ["Brazil", "Colombia", "Venezuela", "Bolivia", "Peru"],
+    "countriesPt": ["Brasil", "Colômbia", "Venezuela", "Bolívia", "Peru"],
+    "habitat": "Pântanos, rios calmos e bacias inundadas",
+    "diet": "Carnivore",
+    "image": "https://images.unsplash.com/photo-1531386151447-fd76ad50012f?auto=format&fit=crop&w=800&q=80",
+    "summary": "A cobra mais pesada e volumosa do mundo, com corpo comprido e verde-oliva pontilhado de manchas negras ovais, caçando por constrição na água."
+  },
+  {
+    "slug": "red-footed-tortoise",
+    "name": "Red-footed Tortoise",
+    "commonNamePt": "Jabuti-piranga",
+    "scientificName": "Chelonoidis carbonarius",
+    "taxonomy": {
+      "class": "Reptilia",
+      "order": "Testudines",
+      "family": "Testudinidae"
+    },
+    "bodyType": "casco",
+    "colors": ["black", "yellow", "red"],
+    "colorsPt": ["preto", "amarelo", "vermelho"],
+    "measurements": {
+      "lengthCm": 35,
+      "weightKg": 6.0,
+      "sizeCategory": "pequeno"
+    },
+    "countries": ["Brazil", "Paraguay", "Bolivia", "Argentina", "Colombia"],
+    "countriesPt": ["Brasil", "Paraguai", "Bolívia", "Argentina", "Colômbia"],
+    "habitat": "Florestas e cerrados secos",
+    "diet": "Omnivore",
+    "image": "https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=800&q=80",
+    "summary": "Réptil terrestre com carapaça abobadada (casco escuro com manchas amarelas) e escamas avermelhadas ou alaranjadas bem visíveis nas patas dianteiras e na cabeça."
+  },
+  {
+    "slug": "black-caiman",
+    "name": "Black Caiman",
+    "commonNamePt": "Jacaré-açu",
+    "scientificName": "Melanosuchus niger",
+    "taxonomy": {
+      "class": "Reptilia",
+      "order": "Crocodilia",
+      "family": "Alligatoridae"
+    },
+    "bodyType": "patas",
+    "colors": ["black", "grey"],
+    "colorsPt": ["preto", "cinza"],
+    "measurements": {
+      "lengthCm": 450,
+      "weightKg": 350,
+      "sizeCategory": "grande"
+    },
+    "countries": ["Brazil", "Peru", "Colombia", "Ecuador"],
+    "countriesPt": ["Brasil", "Peru", "Colômbia", "Equador"],
+    "habitat": "Lagos, rios lentos e igapós amazônicos",
+    "diet": "Carnivore",
+    "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80",
+    "summary": "O maior predador de água doce da América do Sul, com quatro patas robustas, pele escamada escura quase negra e mandíbulas extremamente fortes."
+  },
+  {
+    "slug": "green-iguana",
+    "name": "Green Iguana",
+    "commonNamePt": "Iguana-verde",
+    "scientificName": "Iguana iguana",
+    "taxonomy": {
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Iguanidae"
+    },
+    "bodyType": "patas",
+    "colors": ["green"],
+    "colorsPt": ["verde"],
+    "measurements": {
+      "lengthCm": 150,
+      "weightKg": 4.0,
+      "sizeCategory": "grande"
+    },
+    "countries": ["Brazil", "Mexico", "Colombia", "Paraguay"],
+    "countriesPt": ["Brasil", "México", "Colômbia", "Paraguai"],
+    "habitat": "Árvores próximas a corpos d'água em regiões tropicais",
+    "diet": "Herbivore",
+    "image": "https://images.unsplash.com/photo-1548849208-c89b251fc3ec?auto=format&fit=crop&w=800&q=80",
+    "summary": "Grande lagarto arborícola de coloração verde brilhante, com quatro patas com garras afiadas, crista espinhosa dorsal e excelente capacidade natatória."
+  },
+  {
+    "slug": "tropical-house-gecko",
+    "name": "Tropical House Gecko",
+    "commonNamePt": "Lagartixa-doméstica",
+    "scientificName": "Hemidactylus mabouia",
+    "taxonomy": {
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Gekkonidae"
+    },
+    "bodyType": "patas",
+    "colors": ["white", "grey", "brown"],
+    "colorsPt": ["branco", "cinza", "marrom"],
+    "measurements": {
+      "lengthCm": 12,
+      "weightKg": 0.015,
+      "sizeCategory": "muito-pequeno"
+    },
+    "countries": ["Brazil", "Portugal", "Mozambique", "Angola"],
+    "countriesPt": ["Brasil", "Portugal", "Moçambique", "Angola"],
+    "habitat": "Paredes de residências urbanas e troncos de árvores",
+    "diet": "Insectivore",
+    "image": "https://images.unsplash.com/photo-1563281577-a7be47e20db9?auto=format&fit=crop&w=800&q=80",
+    "summary": "Pequeno réptil inofensivo de hábitos noturnos com quatro patas adesivas para escalar paredes, coloração clara translúcida e voraz predador de insetos domésticos."
+  },
+  {
+    "slug": "pirarucu",
+    "name": "Arapaima (Pirarucu)",
+    "commonNamePt": "Pirarucu",
+    "scientificName": "Arapaima gigas",
+    "taxonomy": {
+      "class": "Actinopterygii",
+      "order": "Osteoglossiformes",
+      "family": "Arapaimidae"
+    },
+    "water": "doce",
+    "colors": ["red", "grey", "green"],
+    "colorsPt": ["vermelho", "cinza", "verde"],
+    "measurements": {
+      "lengthCm": 250,
+      "weightKg": 120,
+      "sizeCategory": "grande"
+    },
+    "countries": ["Brazil", "Peru", "Colombia", "Bolivia"],
+    "countriesPt": ["Brasil", "Peru", "Colômbia", "Bolívia"],
+    "habitat": "Lagos de várzea e rios da Bacia Amazônica",
+    "diet": "Carnivore",
+    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+    "summary": "O gigante das águas doces amazônicas, podendo atingir até 3 metros de comprimento. Possui escamas espessas com margens avermelhadas e respira ar atmosférico."
+  },
+  {
+    "slug": "clownfish",
+    "name": "Clownfish",
+    "commonNamePt": "Peixe-palhaço",
+    "scientificName": "Amphiprion ocellaris",
+    "taxonomy": {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae"
+    },
+    "water": "salgada",
+    "colors": ["orange", "white", "black"],
+    "colorsPt": ["laranja", "branco", "preto"],
+    "measurements": {
+      "lengthCm": 10,
+      "weightKg": 0.05,
+      "sizeCategory": "pequeno"
+    },
+    "countries": ["Australia", "Indonesia", "Philippines", "Japan"],
+    "countriesPt": ["Austrália", "Indonésia", "Filipinas", "Japão"],
+    "habitat": "Recifes de coral e anêmonas marinhas",
+    "diet": "Omnivore",
+    "image": "https://images.unsplash.com/photo-1524704654690-b56c05c78a00?auto=format&fit=crop&w=800&q=80",
+    "summary": "Peixe marinho pequeno e colorido com listras brancas orladas de preto sobre um corpo laranja brilhante, vivendo em simbiose com as anêmonas venenosas."
+  },
+  {
+    "slug": "tucunare",
+    "name": "Peacock Bass (Tucunaré)",
+    "commonNamePt": "Tucunaré-açu",
+    "scientificName": "Cichla temensis",
+    "taxonomy": {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Cichlidae"
+    },
+    "water": "doce",
+    "colors": ["yellow", "green", "black"],
+    "colorsPt": ["amarelo", "verde", "preto"],
+    "measurements": {
+      "lengthCm": 75,
+      "weightKg": 12,
+      "sizeCategory": "grande"
+    },
+    "countries": ["Brazil", "Venezuela", "Colombia"],
+    "countriesPt": ["Brasil", "Venezuela", "Colômbia"],
+    "habitat": "Rios e represas de águas claras e quentes",
+    "diet": "Carnivore",
+    "image": "https://images.unsplash.com/photo-1535591273668-578e31182c4f?auto=format&fit=crop&w=800&q=80",
+    "summary": "Famoso peixe esportivo de água doce com coloração amarela e esverdeada, três barras escuras no flanco e um ocelo característico que lembra o olho de um pavão na cauda."
+  },
+  {
+    "slug": "honey-bee",
+    "name": "Western Honey Bee",
+    "commonNamePt": "Abelha-europa",
+    "scientificName": "Apis mellifera",
+    "taxonomy": {
+      "class": "Insecta",
+      "order": "Hymenoptera",
+      "family": "Apidae"
+    },
+    "subgroup": "inseto",
+    "legs": 6,
+    "hasWings": true,
+    "colors": ["yellow", "black", "brown"],
+    "colorsPt": ["amarelo", "preto", "marrom"],
+    "measurements": {
+      "lengthCm": 1.5,
+      "weightKg": 0.0001,
+      "sizeCategory": "pequeno"
+    },
+    "countries": ["Brazil", "Portugal", "United States", "Spain", "Germany"],
+    "countriesPt": ["Brasil", "Portugal", "Estados Unidos", "Espanha", "Alemanha"],
+    "habitat": "Campos floridos, florestas e colmeias agrícolas",
+    "diet": "Herbivore",
+    "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80",
+    "summary": "Inseto de 6 patas dotado de asas membranosas transparentes e abdômen listrado em amarelo e preto, essencial para a polinização mundial e produção de mel."
+  },
+  {
+    "slug": "monarch-butterfly",
+    "name": "Monarch Butterfly",
+    "commonNamePt": "Borboleta-monarca",
+    "scientificName": "Danaus plexippus",
+    "taxonomy": {
+      "class": "Insecta",
+      "order": "Lepidoptera",
+      "family": "Nymphalidae"
+    },
+    "subgroup": "inseto",
+    "legs": 6,
+    "hasWings": true,
+    "colors": ["orange", "black", "white"],
+    "colorsPt": ["laranja", "preto", "branco"],
+    "measurements": {
+      "lengthCm": 5.0,
+      "weightKg": 0.0005,
+      "sizeCategory": "medio"
+    },
+    "countries": ["United States", "Mexico", "Canada", "Brazil", "Australia"],
+    "countriesPt": ["Estados Unidos", "México", "Canadá", "Brasil", "Austrália"],
+    "habitat": "Campos abertos e pradarias com serralha",
+    "diet": "Herbivore",
+    "image": "https://images.unsplash.com/photo-1535083783855-76ae62b2914e?auto=format&fit=crop&w=800&q=80",
+    "summary": "Borboleta célebre por suas grandes asas alaranjadas recortadas por nervuras pretas e bordas com pontinhos brancos, famosa pela migração de milhares de quilômetros."
+  },
+  {
+    "slug": "yellow-scorpion",
+    "name": "Brazilian Yellow Scorpion",
+    "commonNamePt": "Escorpião-amarelo",
+    "scientificName": "Tityus serrulatus",
+    "taxonomy": {
+      "class": "Arachnida",
+      "order": "Scorpiones",
+      "family": "Buthidae"
+    },
+    "subgroup": "aracnideo",
+    "legs": 8,
+    "hasStinger": true,
+    "hasWings": false,
+    "colors": ["yellow", "brown"],
+    "colorsPt": ["amarelo", "marrom"],
+    "measurements": {
+      "lengthCm": 6.5,
+      "weightKg": 0.004,
+      "sizeCategory": "medio"
+    },
+    "countries": ["Brazil"],
+    "countriesPt": ["Brasil"],
+    "habitat": "Entulhos urbanos, frestas de esgoto, sob pedras e troncos",
+    "diet": "Carnivore",
+    "image": "https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?auto=format&fit=crop&w=800&q=80",
+    "summary": "Aracnídeo de 8 patas com corpo castanho escuro e pernas e cauda amarelas, terminando em ferrão com veneno neurotóxico potente. Reproduz-se por partenogênese."
+  },
+  {
+    "slug": "wandering-spider",
+    "name": "Brazilian Wandering Spider",
+    "commonNamePt": "Aranha-armadeira",
+    "scientificName": "Phoneutria nigriventer",
+    "taxonomy": {
+      "class": "Arachnida",
+      "order": "Araneae",
+      "family": "Ctenidae"
+    },
+    "subgroup": "aracnideo",
+    "legs": 8,
+    "hasStinger": false,
+    "hasWings": false,
+    "colors": ["brown", "grey"],
+    "colorsPt": ["marrom", "cinza"],
+    "measurements": {
+      "lengthCm": 14,
+      "weightKg": 0.015,
+      "sizeCategory": "grande"
+    },
+    "countries": ["Brazil", "Argentina", "Uruguay", "Paraguay"],
+    "countriesPt": ["Brasil", "Argentina", "Uruguai", "Paraguai"],
+    "habitat": "Bananeiras, sob cascas de árvores e entulhos escuros",
+    "diet": "Carnivore",
+    "image": "https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&w=800&q=80",
+    "summary": "Aranha errante agressiva que assume postura defensiva com as pernas dianteiras erguidas quando ameaçada. Coloração marrom acinzentada com quelíceras avermelhadas."
+  }
+]

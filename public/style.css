@@ -1,0 +1,820 @@
+/* ==========================================================================
+   Que bicho é esse? - Identidade Visual Clara, Tons de Verde e Terrosos
+   ========================================================================== */
+
+:root {
+  /* Fundo Principal e Painel */
+  --bg-main: #FFFFFF;
+  --panel-bg: #F5F5F5;
+  --card-white: #FFFFFF;
+
+  /* Variações de Verde (Cores Principais) */
+  --green-sea: #2E8B57;      /* Verde principal */
+  --green-lime: #74AC00;     /* Verde vibrante / acento */
+  --green-dark: #336633;     /* Verde floresta para cabeçalhos */
+  --green-soft-bg: rgba(46, 139, 87, 0.08);
+  --green-glow: rgba(116, 172, 0, 0.22);
+
+  /* Tons Terrosos (Detalhes Secundários e Suporte) */
+  --earthy-primary: #8D5B4C;
+  --earthy-accent: #A66E4E;
+  --earthy-light: #F7EFE9;
+  --earthy-border: #DBC8BC;
+
+  /* Neutros e Tipografia */
+  --text-dark: #1F2937;
+  --text-body: #374151;
+  --text-muted: #6B7280;
+  --border-subtle: #E5E7EB;
+  --border-strong: #D1D5DB;
+
+  /* Fontes e Raios */
+  --font-logo: 'Lilita One', cursive, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --radius-xl: 24px;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-pill: 9999px;
+
+  --transition-smooth: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-main);
+  /* Textura quadriculada sutil inspirada no Geodle */
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+  background-size: 26px 26px;
+  color: var(--text-body);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px 80px 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container Central */
+.app-container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Cabeçalho Superior / Logotipo estilo Geodle
+   ========================================================================== */
+
+.app-hero-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.brand-logo-wrapper {
+  display: inline-block;
+}
+
+.brand-logo {
+  font-family: var(--font-logo);
+  font-size: 3.6rem;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+  color: var(--green-sea);
+  background: linear-gradient(135deg, #2E8B57 0%, #74AC00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: rotate(-1.8deg);
+  display: inline-block;
+  filter: drop-shadow(0 4px 10px rgba(46, 139, 87, 0.16));
+  cursor: default;
+  user-select: none;
+  animation: titlePulse 3.6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes titlePulse {
+  0%, 100% {
+    transform: rotate(-1.8deg) scale(1);
+    filter: drop-shadow(0 4px 10px rgba(46, 139, 87, 0.16));
+  }
+  50% {
+    transform: rotate(-1.8deg) scale(1.03);
+    filter: drop-shadow(0 6px 16px rgba(46, 139, 87, 0.26));
+  }
+}
+
+.brand-tagline {
+  font-size: 1.02rem;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 12px auto 0 auto;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Painel Principal de Perguntas (#F5F5F5)
+   ========================================================================== */
+
+.quiz-card {
+  background: var(--panel-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.03),
+    0 16px 36px -4px rgba(0, 0, 0, 0.05);
+}
+
+.quiz-header {
+  margin-bottom: 20px;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quiz-section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  letter-spacing: -0.01em;
+}
+
+/* Botão Reiniciar em Tom Terroso Secundário */
+.btn-reset {
+  background: var(--card-white);
+  border: 1px solid var(--earthy-border);
+  color: var(--earthy-primary);
+  font-family: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.btn-reset:hover {
+  background: var(--earthy-light);
+  border-color: var(--earthy-accent);
+  color: var(--earthy-accent);
+  transform: translateY(-1px);
+}
+
+/* Fluxo de Perguntas */
+.questions-flow {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  padding: 22px 0;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: slideFadeIn 0.3s forwards var(--transition-smooth);
+}
+
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cabeçalhos das Perguntas em Verde Floresta (#336633) */
+.question-title {
+  color: var(--green-dark);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Grupo de Opções */
+.options-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Grid especial para os Cards de Grupos com Fotos */
+.group-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+/* Botões em Card com Imagem do Grupo */
+.group-card-btn {
+  background: var(--card-white);
+  border: 2px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  padding: 8px 8px 12px 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: all var(--transition-smooth);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  outline: none;
+  width: 100%;
+}
+
+.group-card-btn:hover {
+  border-color: var(--green-lime);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.14);
+}
+
+.group-card-btn.active {
+  border-color: var(--green-sea);
+  border-width: 2.5px;
+  background: var(--card-white);
+  box-shadow: 0 0 0 4px var(--green-glow), 0 8px 20px rgba(46, 139, 87, 0.18);
+  transform: translateY(-2px);
+}
+
+.group-card-img-wrapper {
+  width: 100%;
+  height: 110px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #E5E7EB;
+}
+
+.group-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+  display: block;
+}
+
+.group-card-btn:hover .group-card-img {
+  transform: scale(1.06);
+}
+
+.group-card-label {
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  transition: color var(--transition-smooth);
+}
+
+.group-card-btn.active .group-card-label {
+  color: var(--green-sea);
+}
+
+/* Botões Pílula Padrão */
+.pill-btn {
+  background: var(--card-white);
+  border: 1.5px solid var(--border-strong);
+  color: var(--text-dark);
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 9px 18px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-smooth);
+  user-select: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.pill-btn:hover {
+  border-color: var(--green-lime);
+  color: var(--green-sea);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Estado Ativo: Variações de Verde */
+.pill-btn.active {
+  background: var(--card-white);
+  border-color: var(--green-sea);
+  border-width: 2px;
+  color: var(--green-sea);
+  font-weight: 700;
+  box-shadow: 0 0 0 3px var(--green-glow);
+  transform: translateY(-1px);
+}
+
+.pill-icon {
+  font-size: 1.15rem;
+}
+
+/* Bolinhas de Cores */
+.color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+/* Campo Select de Países */
+.country-select-wrapper {
+  width: 100%;
+  max-width: 420px;
+}
+
+.country-select {
+  width: 100%;
+  background: var(--card-white);
+  border: 1.5px solid var(--border-strong);
+  color: var(--text-dark);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  outline: none;
+  transition: border-color var(--transition-smooth);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.country-select:focus {
+  border-color: var(--green-sea);
+  box-shadow: 0 0 0 3px var(--green-glow);
+}
+
+/* Barra Inferior com link/botão de resultados estilo Geodle */
+.results-trigger-bar {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-results-link {
+  background: var(--card-white);
+  border: 2px solid var(--green-sea);
+  color: var(--green-sea);
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-smooth);
+  box-shadow: 0 4px 12px rgba(46, 139, 87, 0.12);
+}
+
+.btn-results-link:hover {
+  background: var(--green-sea);
+  color: #FFFFFF;
+  box-shadow: 0 6px 16px rgba(46, 139, 87, 0.25);
+  transform: translateY(-2px);
+}
+
+.pulse-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--green-lime);
+  box-shadow: 0 0 8px var(--green-lime);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.arrow-icon {
+  font-size: 1.1rem;
+  transition: transform var(--transition-smooth);
+}
+
+.btn-results-link:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   Painel Lateral (Drawer) - #F5F5F5 Opaco com Blur
+   ========================================================================== */
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1000;
+  transition: visibility var(--transition-smooth);
+  visibility: hidden;
+}
+
+.drawer.open {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.drawer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transition: opacity var(--transition-smooth);
+}
+
+.drawer.open .drawer-overlay {
+  opacity: 1;
+}
+
+.drawer-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 520px;
+  max-width: 90vw;
+  height: 100%;
+  background: rgba(245, 245, 245, 0.96);
+  backdrop-filter: blur(18px);
+  border-left: 1px solid var(--border-subtle);
+  box-shadow: -10px 0 35px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  transform: translateX(100%);
+  transition: transform var(--transition-smooth);
+  overflow-y: auto;
+}
+
+.drawer.open .drawer-panel {
+  transform: translateX(0);
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.drawer-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.drawer-title-group h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+.count-badge {
+  background: var(--green-lime);
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.btn-close, .btn-modal-close {
+  background: var(--card-white);
+  border: 1px solid var(--border-strong);
+  color: var(--text-muted);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+}
+
+.btn-close:hover, .btn-modal-close:hover {
+  background: var(--earthy-light);
+  color: var(--earthy-primary);
+  border-color: var(--earthy-border);
+}
+
+/* Filtros Ativos em Tons Terrosos */
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 14px 0;
+}
+
+.filter-tag {
+  background: var(--earthy-light);
+  border: 1px solid var(--earthy-border);
+  color: var(--earthy-primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+/* Galeria de Cards */
+.species-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.animal-card {
+  background: var(--card-white);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 12px;
+  display: flex;
+  gap: 14px;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.animal-card:hover {
+  border-color: var(--green-sea);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(46, 139, 87, 0.12);
+}
+
+.animal-thumb {
+  width: 85px;
+  height: 85px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  background: #E5E7EB;
+  flex-shrink: 0;
+}
+
+.animal-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  overflow: hidden;
+}
+
+.animal-card-name {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.animal-card-scientific {
+  font-size: 0.84rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.animal-tags {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.animal-tag {
+  background: var(--earthy-light);
+  color: var(--earthy-primary);
+  border: 1px solid var(--earthy-border);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* Estado Vazio */
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+  color: var(--text-muted);
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.empty-state h3 {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.empty-state p {
+  font-size: 0.88rem;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* ==========================================================================
+   Modal de Detalhes
+   ========================================================================== */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+.modal-card {
+  position: relative;
+  background: var(--card-white);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  width: 100%;
+  max-width: 580px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  animation: modalPop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalPop {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.btn-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--border-strong);
+}
+
+.modal-media {
+  position: relative;
+  width: 100%;
+  height: 270px;
+  background: #E5E7EB;
+}
+
+.modal-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-badge-row {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.badge-green {
+  background: var(--green-sea);
+  color: #FFFFFF;
+}
+
+.badge-earthy {
+  background: var(--earthy-primary);
+  color: #FFFFFF;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+.modal-title {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.modal-scientific {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.modal-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+  background: #FAF7F5;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--earthy-border);
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.info-label {
+  font-size: 0.78rem;
+  color: var(--earthy-primary);
+  font-weight: 600;
+}
+
+.info-value {
+  font-size: 0.94rem;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.modal-desc-section h3 {
+  font-size: 1rem;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.modal-desc {
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+  .brand-logo {
+    font-size: 2.7rem;
+  }
+  .quiz-card {
+    padding: 20px 16px;
+  }
+  .drawer-panel {
+    width: 100vw;
+  }
+  .modal-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
