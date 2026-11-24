@@ -10,6 +10,11 @@ Aplicação web interativa para identificação de animais a partir de caracter�
 Abra o terminal na pasta do projeto:
 ```bash
 cd "C:\Users\Miguel\OneDrive\Desktop\queBichoehEsse"
+npm install
+```
+
+```bash
+cd "C:\Users\Miguel\OneDrive\Desktop\queBichoehEsse"
 npm start
 ```
 
