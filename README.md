@@ -11,6 +11,7 @@ Abra o terminal na pasta do projeto:
 ```bash
 cd "C:\Users\Miguel\OneDrive\Desktop\queBichoehEsse"
 npm install
+npm start
 ```
 
 ```bash
@@ -20,8 +21,8 @@ npm start
 ### 2. Acessar no Navegador
 👉 **`http://localhost:3000`**
 
-### 3. Configurar API Key (Opcional)
-Se desejar integrar com a API remota, adicione sua chave no arquivo `.env`:
+### 3. Configurar API Key 
+Para integrar com a API remota e ter acesso a mais de 1000 espécies, adicione sua chave no arquivo `.env`:
 ```env
 PORT=3000
 DATA_AND_APIS_KEY=sua_chave_aqui
