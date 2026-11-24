@@ -14,10 +14,6 @@ npm install
 npm start
 ```
 
-```bash
-npm start
-```
-
 ### 2. Acessar no Navegador
 👉 **`http://localhost:3000`**
 
